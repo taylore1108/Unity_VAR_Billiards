@@ -135,8 +135,8 @@ public class ObjectManipulator : MonoBehaviour
         //yield return new WaitForSeconds(1.0f);
         demoObjects.SetActive(true);
         Vector3 objFwd = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
-        demoObjects.transform.position = Camera.main.transform.position + objFwd;
-        demoObjects.transform.rotation = Quaternion.LookRotation(objFwd);
+        // demoObjects.transform.position = Camera.main.transform.position + objFwd;
+        // demoObjects.transform.rotation = Quaternion.LookRotation(objFwd);
     }
 
     void FindHoverObject(Vector3 controllerPos, Quaternion controllerRot)
